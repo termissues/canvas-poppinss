@@ -1,0 +1,18 @@
+{
+  "name": "@canvas-poppins/regular",
+  "version": "1.0.0",
+  "description": "Poppins-Regular.ttf packaged for canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "canvas",
+    "fonts",
+    "Poppins",
+    "poppins"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
