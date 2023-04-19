@@ -1,14 +1,17 @@
-@canvas-poppins/regular
-====
-
 ## Usage
 
 ```js
-const { registerFont, createCanvas } = require('canvas');
+const Canvas = require('canvas');
+const { registerFont } = require('canvas');
+
+const canvas = Canvas.createCanvas(690, 690);
+const context = canvas.getContext('2d');
 registerFont(require("@canvas-poppins/regular"), { family: "Poppins Regular" });
-const canvas = createCanvas(400, 48);
-const ctx = canvas.getContext('2d');
-ctx.font = `20px "Poppins Regular"`;
-ctx.fillText("Poppins Regular", 5, 30);
-const png = canvas.toBuffer();
+context.drawImage(background, 0, 0, canvas.width, canvas.height);
+context.font = `18px "Poppins Regular"`;
+context.fillStyle = '#ffffff';
 ```
+
+## Packages
+
+- `@canvas-poppins/regular` ([source](https://www.npmjs.com/package/@canvas-poppins/regular))
